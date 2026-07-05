@@ -1,19 +1,18 @@
 import './globals.css';
-// import Header from '../components/Header';
-// import Footer from '../components/Footer';
+import { Lexend } from 'next/font/google';
+
+const lexend = Lexend({ subsets: ['latin'], variable: '--font-lexend', weight: ['300', '400', '600', '800'] });
 
 export const metadata = {
-  title: 'Link in Bio Templates by Sanzy',
-  description: 'Koleksi template link in bio premium untuk personal branding dan bisnis.',
+  title: 'PortalTodo — Tiga Cara Menaklukkan Harimu',
+  description: 'PortalTodo: koleksi 3 aplikasi to-do dengan paradigma berbeda — checklist klasik, papan kanban, dan task manager lengkap.',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="id">
-      <body className="bg-white text-gray-900">
-        {/* <Header /> */}
+      <body className={`${lexend.variable} antialiased`}>
         <main>{children}</main>
-        {/* <Footer /> */}
       </body>
     </html>
   );

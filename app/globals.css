@@ -1,35 +1,43 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-display: var(--font-lexend), system-ui, sans-serif;
+  --font-sans: var(--font-lexend), system-ui, sans-serif;
+
+  --color-papertd: #f7f8f4;
+  --color-inktd: #1d2420;
+  --color-ceklis: #16a34a;
+  --color-stabilo: #fde047;
+  --color-mutedtd: #68716b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background-color: #ffffff;
-  color: #1e293b; /* Tailwind slate-800, gelap tapi adem */
-  font-family: 'Inter', sans-serif;
-  overscroll-behavior-y: contain;
+  background-color: var(--color-papertd);
+  color: var(--color-inktd);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.02em; }
+
+/* Garis buku catatan */
+.ruled {
+  background-image: repeating-linear-gradient(0deg, transparent 0 35px, rgba(29, 36, 32, 0.06) 35px 36px);
 }
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+
+/* Window frame (jendela aplikasi) */
+.window { border: 2.5px solid var(--color-inktd); border-radius: 1rem; overflow: hidden; box-shadow: 10px 10px 0 rgba(29, 36, 32, 0.12); background: #fff; }
+.window-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; border-bottom: 2.5px solid var(--color-inktd); background: var(--color-papertd); }
+
+/* Checkbox dicentang */
+.cek { display: grid; place-items: center; width: 1.4rem; height: 1.4rem; border: 2.5px solid var(--color-inktd); border-radius: 0.4rem; background: var(--color-ceklis); color: #fff; }
+
+/* Coretan stabilo */
+.stabilo { background: linear-gradient(transparent 55%, var(--color-stabilo) 55% 92%, transparent 92%); }
+
+@keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+:focus-visible { outline: 3px solid var(--color-ceklis); outline-offset: 3px; border-radius: 10px; }
