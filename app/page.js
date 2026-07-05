@@ -18,7 +18,7 @@ export default function PortalTodo() {
       {/* Navbar */}
       <header className="sticky top-0 z-40 border-b-[2.5px] border-inktd bg-papertd/90 backdrop-blur-xl">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-          <a href="#" className="flex items-center gap-2 font-display text-lg font-extrabold">
+          <a href="/" className="flex items-center gap-2 font-display text-lg font-extrabold">
             <span className="cek"><ListChecks size={14} /></span> PortalTodo
           </a>
           <a href={WA} target="_blank" rel="noopener noreferrer" className="rounded-full border-[2.5px] border-inktd bg-ceklis px-5 py-2 text-sm font-bold text-white shadow-[3px_3px_0_var(--color-inktd)] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0_var(--color-inktd)]">
