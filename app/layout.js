@@ -3,10 +3,10 @@ import { Lexend } from 'next/font/google';
 
 const lexend = Lexend({ subsets: ['latin'], variable: '--font-lexend', weight: ['300', '400', '600', '800'] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"CollectionPage","name":"PortalTodo","description":"Koleksi 3 aplikasi to-do","url":"https://todo.pintuweb.com","isPartOf":{"@type":"WebSite","name":"PintuWeb","url":"https://pintuweb.com"}};
+const __jsonld = {"@context":"https://schema.org","@type":"CollectionPage","name":"PortalTodo","description":"Koleksi 3 aplikasi to-do","url":"https://portal-todo.vercel.app","isPartOf":{"@type":"WebSite","name":"PintuWeb","url":"https://pintuweb.com"}};
 
 export const metadata = {
-  metadataBase: new URL("https://todo.pintuweb.com"),
+  metadataBase: new URL("https://portal-todo.vercel.app"),
   title: "PortalTodo — Tiga Cara Menaklukkan Harimu",
   description: "PortalTodo: koleksi 3 aplikasi to-do dengan paradigma berbeda — checklist klasik, papan kanban, dan task manager lengkap.",
   applicationName: "PortalTodo",
@@ -14,11 +14,11 @@ export const metadata = {
   authors: [{ name: "PortalTodo" }],
   creator: "PortalTodo",
   publisher: "PortalTodo",
-  alternates: { canonical: "https://todo.pintuweb.com" },
+  alternates: { canonical: "https://portal-todo.vercel.app" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://todo.pintuweb.com",
+    url: "https://portal-todo.vercel.app",
     siteName: "PortalTodo",
     title: "PortalTodo — Tiga Cara Menaklukkan Harimu",
     description: "PortalTodo: koleksi 3 aplikasi to-do dengan paradigma berbeda — checklist klasik, papan kanban, dan task manager lengkap.",
