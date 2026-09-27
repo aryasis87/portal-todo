@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PortalTodo — Tiga Cara Menaklukkan Harimu
 
-## Getting Started
+PortalTodo: koleksi 3 aplikasi to-do dengan paradigma berbeda — checklist klasik, papan kanban, dan task manager lengkap.
 
-First, run the development server:
+**Demo live:** https://portal-todo.vercel.app
+
+![Tangkapan layar PortalTodo](public/og.jpg)
+
+> Katalog demo milik PintuWeb. Setiap kartu menautkan ke demo live yang bisa dicoba.
+
+## Konsep
+
+Katalog aplikasi to-do. Gaya buku catatan: kertas bergaris, kartu to-do hidup di hero, dan pratinjau berbingkai jendela aplikasi.
+
+## Varian yang dipamerkan (3)
+
+- [Hari Ini](https://todo-classic.vercel.app)
+- [TaskFlow](https://todo-kanban-one.vercel.app)
+- [Tuntas](https://todo-manager-ivory-seven.vercel.app)
+
+## Halaman
+
+`/`
+
+## Teknologi
+
+- Next.js 15.5 (App Router) dan React 19
+- Tailwind CSS v4
+- JavaScript
+- Framer Motion, Lucide (ikon)
+- Font: Lexend (next/font)
+- SEO: metadata per halaman, Open Graph, JSON-LD, sitemap.xml, dan robots.txt
+
+## Menjalankan secara lokal
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka http://localhost:3000. Untuk build produksi: `npm run build` lalu `npm start`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dibuat oleh [PintuWeb](https://pintuweb.com), jasa pembuatan website.
