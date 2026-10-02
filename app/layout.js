@@ -8,7 +8,7 @@ const __jsonld = {"@context":"https://schema.org","@type":"CollectionPage","name
 export const metadata = {
   metadataBase: new URL("https://portal-todo.vercel.app"),
   title: "PortalTodo — Tiga Cara Menaklukkan Harimu",
-  description: "PortalTodo: koleksi 3 aplikasi to-do dengan paradigma berbeda — checklist klasik, papan kanban, dan task manager lengkap.",
+  description: "Tiga aplikasi daftar tugas dengan paradigma berbeda: Hari Ini untuk daftar harian, Lajur untuk papan kanban dengan batas WIP, dan Tuntas untuk tugas dengan kalender.",
   applicationName: "PortalTodo",
   keywords: ["aplikasi to-do", "template produktivitas", "kanban", "task manager"],
   authors: [{ name: "PortalTodo" }],
@@ -21,13 +21,13 @@ export const metadata = {
     url: "https://portal-todo.vercel.app",
     siteName: "PortalTodo",
     title: "PortalTodo — Tiga Cara Menaklukkan Harimu",
-    description: "PortalTodo: koleksi 3 aplikasi to-do dengan paradigma berbeda — checklist klasik, papan kanban, dan task manager lengkap.",
+    description: "Tiga aplikasi daftar tugas dengan paradigma berbeda: Hari Ini untuk daftar harian, Lajur untuk papan kanban dengan batas WIP, dan Tuntas untuk tugas dengan kalender.",
     images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "PortalTodo — Tiga Cara Menaklukkan Harimu" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "PortalTodo — Tiga Cara Menaklukkan Harimu",
-    description: "PortalTodo: koleksi 3 aplikasi to-do dengan paradigma berbeda — checklist klasik, papan kanban, dan task manager lengkap.",
+    description: "Tiga aplikasi daftar tugas dengan paradigma berbeda: Hari Ini untuk daftar harian, Lajur untuk papan kanban dengan batas WIP, dan Tuntas untuk tugas dengan kalender.",
     images: ["/og.jpg"],
   },
   robots: {
@@ -39,8 +39,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id">
-      <body className={`${lexend.variable} antialiased`}>
+    <html lang="id" className={lexend.variable}>
+      <body className="antialiased">
         <main>{children}</main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(__jsonld) }} />
         </body>
