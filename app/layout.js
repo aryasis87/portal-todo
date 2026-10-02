@@ -3,7 +3,7 @@ import { Lexend } from 'next/font/google';
 
 const lexend = Lexend({ subsets: ['latin'], variable: '--font-lexend', weight: ['300', '400', '600', '800'] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"CollectionPage","name":"PortalTodo","description":"Koleksi 3 aplikasi to-do","url":"https://portal-todo.vercel.app","isPartOf":{"@type":"WebSite","name":"PintuWeb","url":"https://pintuweb.com"}};
+const __jsonld = {"@context":"https://schema.org","@type":"CollectionPage","name":"PortalTodo","description":"Koleksi 3 aplikasi to-do","url":"https://portal-todo.vercel.app","isPartOf":{"@type":"WebSite","name":"PintuWeb","url":"https://www.pintuweb.com"}};
 
 export const metadata = {
   metadataBase: new URL("https://portal-todo.vercel.app"),

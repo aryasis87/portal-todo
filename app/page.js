@@ -233,7 +233,7 @@ export default function PortalTodo() {
             <p className="font-display text-xs font-bold uppercase tracking-widest text-ceklis-terang">Hubungi</p>
             <ul className="mt-3 space-y-2">
               <li><a href={WA} target="_blank" rel="noopener noreferrer" className="transition hover:text-papertd">WhatsApp +62 813 3990 8765</a></li>
-              <li><a href="https://pintuweb.com" target="_blank" rel="noopener noreferrer" className="transition hover:text-papertd">pintuweb.com</a></li>
+              <li><a href="https://www.pintuweb.com" target="_blank" rel="noopener noreferrer" className="transition hover:text-papertd">pintuweb.com</a></li>
             </ul>
           </div>
         </div>
