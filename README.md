@@ -2,7 +2,7 @@
 
 PortalTodo: koleksi 3 aplikasi to-do dengan paradigma berbeda — checklist klasik, papan kanban, dan task manager lengkap.
 
-**Demo live:** https://portal-todo.vercel.app
+**Demo live:** https://www.pintuweb.com/aplikasi-to-do
 
 ![Tangkapan layar PortalTodo](public/og.jpg)
 
