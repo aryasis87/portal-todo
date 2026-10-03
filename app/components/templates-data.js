@@ -3,6 +3,7 @@ export const templates = [
   {
     name: 'Hari Ini',
     berkas: 'hari-ini',
+    terjual: 1,
     tagline: 'Satu daftar untuk satu hari',
     description: 'Yang selesai pindah ke rekap besoknya, yang belum ikut terbawa. Ketik "Telepon klien 14.00 !" dan jam serta prioritasnya langsung terbaca.',
     image: '/images/todo/hari-ini.webp',
@@ -14,6 +15,7 @@ export const templates = [
   {
     name: 'Lajur',
     berkas: 'lajur',
+    terjual: 0,
     tagline: 'Papan kanban dengan batas WIP',
     description: 'Tiga lajur — Antre, Dikerjakan, Selesai — dengan batas tiga kartu yang dikerjakan sekaligus. Setiap kartu mencatat kapan mulai dan selesai.',
     image: '/images/todo/lajur.webp',
@@ -25,6 +27,7 @@ export const templates = [
   {
     name: 'Tuntas',
     berkas: 'tuntas',
+    terjual: 0,
     tagline: 'Pengelola tugas dengan kalender',
     description: 'Prioritas, tenggat yang dibaca relatif ("Besok", "Terlambat 2 hari"), label, dan kalender bulanan — untuk urusan kerja dan rumah sekaligus.',
     image: '/images/todo/tuntas.webp',

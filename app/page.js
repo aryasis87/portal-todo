@@ -119,6 +119,7 @@ export default function PortalTodo() {
                 <p className="font-display text-xs font-bold uppercase tracking-[0.25em] text-ceklis">0{i + 1} — {t.cocok}</p>
                 <h2 className="mt-2 font-display text-3xl font-extrabold md:text-4xl">{t.name}</h2>
                 <p className="mt-1 text-lg font-semibold text-mutedtd">{t.tagline}</p>
+                {t.terjual > 0 && <p className="mt-2 font-display text-sm font-bold"><span className="stabilo px-1">✓ {t.terjual} terjual</span></p>}
                 <p className="mt-3 font-light leading-relaxed text-inktd/80">{t.description}</p>
                 <ul className="mt-5 space-y-2.5">
                   {t.fitur.map((f) => (
