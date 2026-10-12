@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { Check, ArrowDown, ArrowUpRight, ListChecks, MessageCircle, Moon, Zap, Save, Smartphone, PencilRuler, Package, ChevronDown } from 'lucide-react';
 import { templates } from './components/templates-data';
 
-const WA = 'https://wa.me/6281339908765?text=Halo%2C%20saya%20tertarik%20aplikasi%20to-do%20di%20PortalTodo';
+const WA = 'https://wa.me/6285190931399?text=Halo%2C%20saya%20tertarik%20aplikasi%20to-do%20di%20PortalTodo';
 
 const HERO_TODO = [
   { t: 'Bangun pagi', done: true },
@@ -24,7 +24,7 @@ const CATATAN = [
 
 const TANYA = [
   { q: 'Aplikasi ini untuk pribadi atau tim?', a: 'Ketiganya dirancang untuk produktivitas pribadi dan tim kecil. Untuk kolaborasi real-time multi-user, kami bisa kembangkan versi custom dengan backend — tanyakan saja.' },
-  { q: 'Berapa biaya membuat aplikasi seperti ini?', a: 'Paket Aplikasi Web PintuWeb mulai Rp4 juta (kisaran Rp4–10 juta, bisa lebih untuk fitur besar), dikerjakan 2–4 minggu: login & peran pengguna, kelola data, tampilan kanban/kalender/laporan, ekspor data, plus hosting & database tahun pertama.' },
+  { q: 'Berapa biaya membuat aplikasi seperti ini?', a: 'Paket Aplikasi Web PintuWeb mulai Rp2 juta (kisaran Rp2–5 juta, bisa lebih untuk fitur besar), dikerjakan 2–4 minggu: login & peran pengguna, kelola data, tampilan kanban/kalender/laporan, ekspor data, plus hosting & database tahun pertama.' },
   { q: 'Apakah data tugas saya aman?', a: 'Data tersimpan lokal di perangkatmu (localStorage) — tidak dikirim ke server mana pun. Privasimu utuh. Versi dengan sinkronisasi cloud tersedia sebagai pengembangan custom.' },
   { q: 'Bedanya ketiga aplikasi ini apa?', a: 'Paradigmanya: Hari Ini untuk daftar harian yang fokus; Lajur untuk alur kerja bertahap dengan batas kerja paralel; Tuntas untuk yang butuh prioritas, tenggat, label, dan kalender.' },
   { q: 'Bisakah dijadikan aplikasi internal perusahaan?', a: 'Bisa. Kami sering menyesuaikan template ini menjadi tools internal: menambah login, database, dan laporan. Mulai dari template berarti lebih cepat dan hemat.' },
@@ -242,7 +242,7 @@ export default function PortalTodo() {
           <div className="text-sm">
             <p className="font-display text-xs font-bold uppercase tracking-widest text-ceklis-terang">Hubungi</p>
             <ul className="mt-3 space-y-2">
-              <li><a href={WA} target="_blank" rel="noopener noreferrer" className="transition hover:text-papertd">WhatsApp +62 813 3990 8765</a></li>
+              <li><a href={WA} target="_blank" rel="noopener noreferrer" className="transition hover:text-papertd">WhatsApp +62 851 9093 1399</a></li>
               <li><a href="https://www.pintuweb.com" className="transition hover:text-papertd">pintuweb.com</a></li>
             </ul>
           </div>
